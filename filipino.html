@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="COMP.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>My 1st Grading Period: Knowledge in Action</title>
+    <style>
+        .video-1 {
+            display: flex;
+            flex-wrap: nowrap;
+            color: white;
+            margin-top: 100px;
+            padding: 100px;
+        }
+
+        .video-2 {
+            display: flex;
+            flex-wrap: nowrap;
+            color: white;
+            margin-top: 100px;
+            padding: 100px;
+        }
+
+        .videoHeader {
+            padding-top: 10px;
+            height: 20px;
+            color: #D9D9D9;
+            font-family: "Courier Prime", monospace;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 92px;
+        }
+
+        .video-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        <div id="navbar">
+        <a class="navbarLink" href="homepage.html">Home</a>
+        <a class="navbarLink" href="about-us.html">About Us</a>
+        <a class="navbarLink" href="english.html">English</a>
+        <a class="navbarLink" href="ap.html">AP</a>
+        <a class="navbarLink" href="filipino.html">Filipino</a>
+        <a class="navbarLink" href="science.html">Science</a>
+        </div>
+    </nav>
+    <header>
+        <div class="header">
+        <h1 id="demo"></h1>
+        <img class="headerImg" style="float:right;" src="moon.png">
+        </div>
+    </header>
+    <div class ="video-1">
+        <span class="videoHeader">Speaking Task</br>of Gabby</span>
+        <div class="video-container">
+          <div class="myVideo1">
+            <iframe width="900" height="500" src="https://www.youtube-nocookie.com/embed/n-_wSG9bovs?si=P4Ayn81qaDQ2552s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+    </div>
+    <div class ="video-2">
+        <span class="videoHeader">Speaking Task</br>of Miguel</span>
+        <div class="video-container">
+          <div class="myVideo2">
+            <iframe width="900" height="500" src="https://www.youtube.com/embed/xvwdPGtZ7rY?si=6-97eMx9gQ3_uDgP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+    </div>
+    <footer>
+        <table class="footer">
+            <tr>
+                <th class="footerHeaderText">Contact Us</th>
+                <th class="footerHeaderText">Resources</th>
+                <td class="footerImg" rowspan="3"><img src="moon.png"></td>
+            </tr>
+            <tr>
+                <td class="footerSubText">
+                <ul>
+                    <li><a class="footerSubLinks" href="mailto:quintin.allado@student.ateneo.edu">Gabby Allado</a></li>
+                    <li><a class="footerSubLinks" href="mailto:angelo.ambulo@student.ateneo.edu">Miguel Ambulo</a></li>
+                </ul>
+                </td>
+                <td class="footerSubText">
+                <ul>
+                    <li><a class="footerSubLinks" href="https://www.w3schools.com" target="_blank">w3schools</a></li>
+                    <li><a class="footerSubLinks" href="https://stackoverflow.com" target="_blank">stackoverflow</a></li>
+                    <li><a class="footerSubLinks" href="https://css-tricks.com" target="_blank">css-tricks</a></li>
+                    <li><a class="footerSubLinks" href="https://canva.com" target="_blank">Canva (images)</a></li>
+                </ul>
+                </td>
+            </tr>
+            <tr style="color:#7d85b2;font-size: 30.9px;font-weight: lighter; padding-right:50px;text-decoration:none;">
+                <td colspan="2" style="padding-bottom:50px;">
+                P.S. We’d like to hear from you!</br>Please give us feedback by clicking this&nbsp;<a style="color:#7d85b2;" href="https://docs.google.com/forms/d/e/1FAIpQLSfiDnuNLyGIgmNBUOU26ZrBBNagTNGMdfcbDR0dvFN7E0pKpg/viewform?usp=sf_link" target="_blank">link</a></br>Once again, thank you for visiting our website!
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <script>        
+        var i = 0;
+        var txt = 'Filipino';
+        var speed = 300;
+
+        function typeWriter() {
+        if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed); 
+        } else {
+        i = 0;
+        document.getElementById("demo").innerHTML = '';
+        }
+        }
+
+        setInterval(typeWriter, 2000)
+      </script>
+    <script src="navbar.js"></script>
+</body>
+</html>

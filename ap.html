@@ -1,0 +1,404 @@
+<DOCTYPE !html>
+    <html>
+        <head>
+            <meta-charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="COMP.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Special+Elite&display=swap" rel="stylesheet">
+            <title>My 1st Grading Period: Knowledge in Action</title>
+            <style>
+                * {box-sizing: border-box}
+                .mySlides1, .mySlides2 {display: none}
+                img {vertical-align: middle;}
+               
+                .slideshow-1 {
+                  display: flex;
+                  flex-wrap: nowrap;
+                  color: white;
+                  margin-top: 100px;
+                  padding: 100px;
+                }
+
+                .slideshow-2 {
+                  display: flex;
+                  flex-wrap: nowrap;
+                  color: white;
+                  margin-top: 100px;
+                  padding: 100px;
+                }
+
+                .slideHeader {
+                  padding-top: 10px;
+                  height: 20px;
+                  color: #D9D9D9;
+                  font-family: "Courier Prime", monospace;
+                  font-weight: 400;
+                  font-style: normal;
+                  font-size: 92px;
+                }
+
+                .slideshow-container {
+                  max-width: 1000px;
+                  position: relative;
+                  margin: auto;
+                  color: white;
+                } 
+
+                .slideshowIndicator1 {
+                  position: absolute;
+                  bottom: 10;
+                  left: 400;
+                  background-color: black;
+                  padding: 10px;
+                  border-radius: 82px;
+                  transition: 0.4;
+                  font-family: Arial;
+                  color: white;
+                  text-align: center;
+                }
+
+                .move-text .text {
+                  display: inline-block;
+                  transition: transform 0.2s ease;
+                  position: relative;
+                }
+
+                .slideshowIndicator1:focus {
+                  position: absolute;
+                  bottom: 0;
+                  width: 100%;
+                  left: 0;
+                  background-color: black;
+                  padding-top: 100px;
+                  border-radius: 0px;
+                }
+
+                .prev, .next {
+                  cursor: pointer;
+                  position: absolute;
+                  top: 50%;
+                  width: auto;
+                  padding: 16px;
+                  margin-top: -22px;
+                  color: black;
+                  font-weight: bold;
+                  font-size: 18px;
+                  transition: 0.6s ease;
+                  border-radius: 0 3px 3px 0;
+                  user-select: none;
+                }
+                 
+                .textwhenbuttonisclicked {
+                  bottom: 0;
+                  font-family: Arial;
+                  color: white;
+                  text-align: center;
+                }
+                .next {
+                  right: 0;
+                  border-radius: 3px 0 0 3px;
+                }
+
+                .prev:hover, .next:hover {
+                  background-color: white;
+                  color: black;
+                }
+
+
+                </style>
+                </head>
+                <body>
+                  <nav id="nav">
+                    <div id="navbar">
+                    <a class="navbarLink" href="homepage.html">Home</a>
+                    <a class="navbarLink" href="about-us.html">About Us</a>
+                    <a class="navbarLink" href="english.html">English</a>
+                    <a class="navbarLink" href="ap.html">AP</a>
+                    <a class="navbarLink" href="filipino.html">Filipino</a>
+                    <a class="navbarLink" href="science.html">Science</a>
+                    </div>
+                </nav>
+                <header>
+                  <div class="header">
+                  <h1 id="demo"></h1>
+                  <img class="headerImg" style="float:right;" src="moon.png">
+                  </div>
+              </header>
+                <div class ="slideshow-1">
+                <span class="slideHeader">Market Analysis of Gabby's</br>Group</span>
+                <div class="slideshow-container">
+                  <div class="mySlides1">
+                    <img src="1.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 1 / 25</button>
+                  </div>
+                
+                  <div class="mySlides1">
+                    <img src="2.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 2 / 25</button>
+                  </div>
+                
+                  <div class="mySlides1">
+                    <img src="3.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 3 / 25</button>
+                  </div>
+
+                  <div class="mySlides1">
+                    <img src="4.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 4 / 25</button>
+                  </div>
+                  
+                  <div class="mySlides1">
+                    <img src="5.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 5 / 25</button>
+                  </div>
+                  
+                  <div class="mySlides1">
+                    <img src="6.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 6 / 25</button>
+                  </div>
+
+                  <div class="mySlides1">
+                    <img src="7.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 7 / 25</button>
+                  </div>
+                  
+                  <div class="mySlides1">
+                    <img src="8.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 8 / 25</button>
+                  </div>
+                  
+                  <div class="mySlides1">
+                    <img src="9.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 9 / 25</button>
+                  </div>
+  
+                  <div class="mySlides1">
+                    <img src="10.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 10 / 25</button>
+                  </div>
+                    
+                  <div class="mySlides1">
+                    <img src="11.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 11 / 25</button>
+                  </div>
+                    
+                  <div class="mySlides1">
+                    <img src="12.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 12 / 25</button>
+                  </div>
+                  
+                  <div class="mySlides1">
+                    <img src="13.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 13 / 25</button>
+                  </div>
+                
+                  <div class="mySlides1">
+                    <img src="14.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 14 / 25</button>
+                  </div>
+                
+                  <div class="mySlides1">
+                    <img src="15.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 15 / 25</button>
+                  </div>
+
+                  <div class="mySlides1">
+                    <img src="16.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 16 / 25</button>
+                  </div>
+                  
+                  <div class="mySlides1">
+                    <img src="17.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 17 / 25</button>
+                  </div>
+                  
+                  <div class="mySlides1">
+                    <img src="18.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 18 / 25</button>
+                  </div>
+
+                  <div class="mySlides1">
+                    <img src="19.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 19 / 25</button>
+                  </div>
+                  
+                  <div class="mySlides1">
+                    <img src="20.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 20 / 25</button>
+                  </div>
+                  
+                  <div class="mySlides1">
+                    <img src="21.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 21 / 25</button>
+                  </div>
+  
+                  <div class="mySlides1">
+                    <img src="22.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 22 / 25</button>
+                  </div>
+                    
+                  <div class="mySlides1">
+                    <img src="23.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 23 / 25</button>
+                  </div>
+                    
+                  <div class="mySlides1">
+                    <img src="24.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 24 / 25</button>
+                  </div>
+
+                  <div class="mySlides1">
+                    <img src="25.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 25 / 25</button>
+                  </div>
+                
+                  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                </div>
+                </div>
+                
+                <div class ="slideshow-2">
+                <span class="slideHeader">Market Analysis of Miguel's Group</span>
+                <div class="slideshow-container">
+                  <div class="mySlides2">
+                    <img src="2_1.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 1 / 25</button>
+                  </div>
+                
+                  <div class="mySlides2">
+                    <img src="2_2.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 2 / 13</button>
+                  </div>
+                
+                  <div class="mySlides2">
+                    <img src="2_3.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 3 / 13</button>
+                  </div>
+
+                  <div class="mySlides2">
+                    <img src="2_4.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 4 / 13</button>
+                  </div>
+                  
+                  <div class="mySlides2">
+                    <img src="2_5.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 5 / 13</button>
+                  </div>
+                  
+                  <div class="mySlides2">
+                    <img src="2_6.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 6 / 13</button>
+                  </div>
+
+                  <div class="mySlides2">
+                    <img src="2_7.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 7 / 13</button>
+                  </div>
+                  
+                  <div class="mySlides2">
+                    <img src="2_8.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 8 / 13</button>
+                  </div>
+                  
+                  <div class="mySlides2">
+                    <img src="2_9.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 9 / 13</button>
+                  </div>
+  
+                  <div class="mySlides2">
+                    <img src="2_10.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 10 / 13</button>
+                  </div>
+                    
+                  <div class="mySlides2">
+                    <img src="2_11.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 11 / 13</button>
+                  </div>
+                    
+                  <div class="mySlides2">
+                    <img src="2_12.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 12 / 13</button>
+                  </div>
+                  
+                  <div class="mySlides2">
+                    <img src="2_13.png" style="width:100%">
+                    <button class="slideshowIndicator1">Slide 13 / 13</button>
+                  </div>
+                  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                </div>
+                </div>
+                <footer>
+                  <table class="footer">
+                      <tr>
+                          <th class="footerHeaderText">Contact Us</th>
+                          <th class="footerHeaderText">Resources</th>
+                          <td class="footerImg" rowspan="3"><img src="moon.png"></td>
+                      </tr>
+                      <tr>
+                          <td class="footerSubText">
+                          <ul>
+                              <li><a class="footerSubLinks" href="mailto:quintin.allado@student.ateneo.edu">Gabby Allado</a></li>
+                              <li><a class="footerSubLinks" href="mailto:angelo.ambulo@student.ateneo.edu">Miguel Ambulo</a></li>
+                          </ul>
+                          </td>
+                          <td class="footerSubText">
+                          <ul>
+                              <li><a class="footerSubLinks" href="https://www.w3schools.com" target="_blank">w3schools</a></li>
+                              <li><a class="footerSubLinks" href="https://stackoverflow.com" target="_blank">stackoverflow</a></li>
+                              <li><a class="footerSubLinks" href="https://css-tricks.com" target="_blank">css-tricks</a></li>
+                              <li><a class="footerSubLinks" href="https://canva.com" target="_blank">Canva (images)</a></li>
+                          </ul>
+                          </td>
+                      </tr>
+                      <tr style="color:#7d85b2;font-size: 30.9px;font-weight: lighter; padding-right:50px;text-decoration:none;">
+                          <td colspan="2" style="padding-bottom:50px;">
+                          P.S. We’d like to hear from you!</br>Please give us feedback by clicking this&nbsp;<a style="color:#7d85b2;" href="https://docs.google.com/forms/d/e/1FAIpQLSfiDnuNLyGIgmNBUOU26ZrBBNagTNGMdfcbDR0dvFN7E0pKpg/viewform?usp=sf_link" target="_blank">link</a></br>Once again, thank you for visiting our website!
+                          </td>
+                      </tr>
+                  </table>
+              </footer>
+                <script>
+                let slideIndex = [1,1];
+                let slideId = ["mySlides1", "mySlides2"]
+                showSlides(1, 0);
+                showSlides(1, 1);
+                
+                function plusSlides(n, no) {
+                  showSlides(slideIndex[no] += n, no);
+                }
+                
+                function showSlides(n, no) {
+                  let i;
+                  let x = document.getElementsByClassName(slideId[no]);
+                  if (n > x.length) {slideIndex[no] = 1}    
+                  if (n < 1) {slideIndex[no] = x.length}
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";  
+                  }
+                  x[slideIndex[no]-1].style.display = "block";  
+                }    
+        var i = 0;
+        var txt = 'Araling Panlipunan';
+        var speed = 200;
+
+        function typeWriter() {
+        if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed); 
+        } else {
+        i = 0;
+        document.getElementById("demo").innerHTML = '';
+        }
+        }
+
+        setInterval(typeWriter, 2000)
+      </script>
+                </script>
+                <script src="navbar.js"></script>
+                </body>
+                </html> 
+                

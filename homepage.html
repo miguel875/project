@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="COMP.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Special+Elite&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>My 1st Grading Period: Knowledge in Action</title>
+    <style>
+    .homepageSubText {
+        font-size: 62px; 
+        text-overflow: wrap; 
+        width: 100%; 
+        vertical-align: top; 
+        padding-left: 100px;
+        color: #D9D9D9;
+        font-family: "Courier Prime", monospace;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .webpages {
+        font-size: 62px;
+        margin-left: 100px;
+        text-align: center;
+        font-family: "Courier Prime", monospace;
+        font-weight: 400;
+        font-style: normal;
+        color: #d9d9d9;
+    }
+
+    .aboutUs {
+        font-size: 42px;
+        padding: 10px;
+        border-radius: 22px;
+    }
+
+    .english {
+        font-size: 42px;
+        padding: 10px;
+        border-radius: 22px;
+    }
+
+    .ap {
+        font-size: 42px;
+        padding: 10px;
+        border-radius: 22px;
+    }
+
+    .filipino {
+        font-size: 42px;
+        padding: 10px;
+        border-radius: 22px;
+        margin-top: 15px;
+    }
+
+    .science {
+        font-size: 42px;
+        padding: 10px;
+        border-radius: 22px;
+        margin-top: 15px;
+    }
+
+    input[type="checkbox"] {
+    content: url('play-button.png');
+    appearance: none;
+    display: block;
+    }
+
+    input[type="checkbox"]:checked {
+    content: url('pause-button.png');
+    position: fixed;
+    }
+
+    .volume-container {
+    width: 100%;
+    left: 1045px; 
+    bottom: 130px;
+    position: absolute;
+    }
+
+    #volume-bar {
+    width: 305px;
+    }
+
+    .progress-container {
+    width: 100%;
+    left: 1045px; 
+    bottom: 275px;
+    position: absolute;
+    }
+
+    #progress-bar {
+    width: 305px;
+    }
+
+    .indicator {
+    text-align: center;
+    background-color: #171718;
+    }
+
+    #curtimetext {
+    margin-left: 10px;
+    font-size: 12px;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+    margin-top: 0px;
+    }
+
+    #remainingTimeText {
+    margin-left: 216.6px;
+    font-size: 12px;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+    margin-top: 0px;
+    }
+    
+    #audioButton {
+        cursor: pointer; 
+        width: 85px; 
+        height: 85px; 
+        position: absolute; 
+        left: 1155px; 
+        bottom: 190px;
+    }
+</style>
+</head>
+<body onload="typeWriter()">
+    <nav id="nav">
+        <div id="navbar">
+        <a class="navbarLink" href="homepage.html">Home</a>
+        <a class="navbarLink" href="about-us.html">About Us</a>
+        <a class="navbarLink" href="english.html">English</a>
+        <a class="navbarLink" href="ap.html">AP</a>
+        <a class="navbarLink" href="filipino.html">Filipino</a>
+        <a class="navbarLink" href="science.html">Science</a>
+        </div>
+    </nav>
+    <header>
+        <div class="header">
+        <h1 id="demo"></h1>
+        <img class="headerImg" style="float:right;" src="moon.png">
+        </div>
+    </header>
+    <table id="music" style="position: relative;">
+        <tr>
+            <th class="homepageSubText" colspan="2">
+            Welcome to our website!</br>Please check out our different webpages and learn something new today!
+            </th>
+        </tr>
+        <tr>
+            <td class="courier-prime-regular" style="font-size: 92px; padding-left: 100px;">Featured</br>Content</td>
+            <td style="padding-left: 5%;"><p class="courier-prime-regular" style="font-size: 92px; margin-right: 10%">Our School</br>Anthem</p></td>
+        </tr>
+        <tr>
+            <td style="width:50%; vertical-align: top;">
+                <div class="webpages">
+                <span>Other Webpages</span></br>
+                <a href="about-us.html"><button class="aboutUs">About Us</button></a>
+                <a href="english.html"><button class="english">English</button></a>
+                <a href="ap.html"><button class="ap">AP</button></a></br>
+                <a href="filipino.html"><button class="filipino">Filipino</button></a>
+                <a href="science.html"><button class="science">Science</button></a>
+                </span>
+                </div>
+            </td>
+            <td>
+                <img style="margin-left: 50px" src="mockup2.png">
+                        <div class="progress-container">
+                    <input type="range" id="progress-bar" min="0" max="100" value="0">
+                </br>
+                    <span id="curtimetext">00:00</span> <span id="remainingTimeText">-00:00</span>
+                </div>
+                <img src="play-button.png" alt="Play Audio" id="audioButton" onclick="toggleAudio()">
+                <audio id="myAudio" src="anthem.mp3"></audio>
+                <div class="volume-container">
+                    <input type="range" id="volume-bar" onchange="setVolume()" min="0" max="1" value="1" step="0.01">
+                </div>
+            </td>
+        </tr>
+    </table>
+    <footer>
+        <table class="footer">
+            <tr>
+                <th class="footerHeaderText">Contact Us</th>
+                <th class="footerHeaderText">Resources</th>
+                <td class="footerImg" rowspan="3"><img src="moon.png"></td>
+            </tr>
+            <tr>
+                <td class="footerSubText">
+                <ul>
+                    <li><a class="footerSubLinks" href="mailto:quintin.allado@student.ateneo.edu">Gabby Allado</a></li>
+                    <li><a class="footerSubLinks" href="mailto:angelo.ambulo@student.ateneo.edu">Miguel Ambulo</a></li>
+                </ul>
+                </td>
+                <td class="footerSubText">
+                <ul>
+                    <li><a class="footerSubLinks" href="https://www.w3schools.com" target="_blank">w3schools</a></li>
+                    <li><a class="footerSubLinks" href="https://stackoverflow.com" target="_blank">stackoverflow</a></li>
+                    <li><a class="footerSubLinks" href="https://css-tricks.com" target="_blank">css-tricks</a></li>
+                    <li><a class="footerSubLinks" href="https://canva.com" target="_blank">Canva (images)</a></li>
+                </ul>
+                </td>
+            </tr>
+            <tr style="color:#7d85b2;font-size: 30.9px;font-weight: lighter; padding-right:50px;text-decoration:none;">
+                <td colspan="2" style="padding-bottom:50px;">
+                P.S. We’d like to hear from you!</br>Please give us feedback by clicking this&nbsp;<a style="color:#7d85b2;" href="https://docs.google.com/forms/d/e/1FAIpQLSfiDnuNLyGIgmNBUOU26ZrBBNagTNGMdfcbDR0dvFN7E0pKpg/viewform?usp=sf_link" target="_blank">link</a></br>Once again, thank you for visiting our website!
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <script>
+        function setVolume() {
+            var x = document.getElementById("myAudio");
+            x.volume = document.getElementById("volume-bar").value;
+        }
+
+        function toggleAudio() {
+            var audio = document.getElementById("myAudio");
+            var button = document.getElementById("audioButton");
+            if (audio.paused) {
+                audio.play();
+                button.src = "pause-button.png";
+            } else {
+                audio.pause();
+                button.src = "play-button.png";
+            }
+        }
+
+        const audio = document.getElementById("myAudio");
+        const progressBar = document.getElementById("progress-bar");
+        const currentTimeText = document.getElementById("curtimetext");
+        const durationText = document.getElementById("durtimetext");
+        const slideMove = document.querySelector('.move')
+
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
+            return `${minutes}:${secs}`;
+        }
+
+        audio.onloadedmetadata = () => {
+            durationText.textContent = formatTime(audio.duration);
+        };
+
+        audio.ontimeupdate = () => {
+            const progressPercent = (audio.currentTime / audio.duration) * 100;
+            progressBar.value = progressPercent;
+            currentTimeText.textContent = formatTime(audio.currentTime);
+
+            const remainingTime = audio.duration - audio.currentTime;
+            document.getElementById("remainingTimeText").textContent = "-" + formatTime(remainingTime);
+        };
+
+        progressBar.oninput = () => {
+            audio.currentTime = (progressBar.value / 100) * audio.duration;
+        };
+
+        var i = 0;
+        var txt = 'Home';
+        var speed = 300;
+
+        function typeWriter() {
+        if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed); 
+        } else {
+        i = 0;
+        document.getElementById("demo").innerHTML = '';
+        }
+        }
+
+        setInterval(typeWriter, 2000)
+    </script>
+    <script src="navbar.js"></script>
+</body>
+</html>
